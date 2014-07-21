@@ -19,18 +19,13 @@ use Texture;
 static VERTEX_SHADER_TRI_LIST_XY_RGBA: &'static str = "
 attribute vec4 a_v4Position;
 attribute vec4 a_v4FillColor;
-attribute vec2 a_v2TexCoord;
 
-uniform sampler2D s_texture;
-
-varying vec2 v_v2TexCoord;
 varying vec4 v_v4FillColor;
 
 void main()
 {
-        v_v2TexCoord = a_v2TexCoord;
-        v_v4FillColor = a_v4FillColor;
-        gl_Position = a_v4Position;
+    v_v4FillColor = a_v4FillColor;
+    gl_Position = a_v4Position;
 }
 ";
 

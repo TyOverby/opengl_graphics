@@ -30,6 +30,7 @@ void main()
 ";
 
 static FRAGMENT_SHADER_TRI_LIST_XY_RGBA: &'static str = "
+precision highp float;
 varying vec4 v_v4FillColor;
 
 void main()
@@ -57,6 +58,7 @@ void main()
 ";
 
 static FRAGMENT_SHADER_TRI_LIST_XY_RGBA_UV: &'static str = "
+precision highp float;
 uniform sampler2D s_texture;
 
 varying vec2 v_v2TexCoord;
